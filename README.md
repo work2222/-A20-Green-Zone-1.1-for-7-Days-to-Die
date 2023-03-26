@@ -3,8 +3,7 @@
 GREEN ZONE QUEST by work22
 
  
-
-image.png.48726209da504ac273dacebf4c925b03.png
+https://community.7daystodie.com/topic/31507-a20-green-zone-quest-mod-11/
 
  
 
