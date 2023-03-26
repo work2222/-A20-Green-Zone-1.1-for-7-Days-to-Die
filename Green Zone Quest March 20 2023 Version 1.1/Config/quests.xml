@@ -1,0 +1,675 @@
+<configs>
+
+<!--WELCOME TO THE GREEN ZONE QUEST.XML.  This may not be pretty, but its what I've got and so far so good.  Any optimization or improvement suggestions welcome to me at the 
+7 Days to Die forums, username work22.  February 2023
+	
+	Alternative settings for custom quest creation:
+
+	name - quest name without localization.
+	subtitle - sub name without localization.
+	description - description without localization.
+	offer - offer without localization.
+	group_name - quest chain name without localization.
+	category - category type without localization. -->
+
+	<!-- GREEN ZONE QUEST Order (after game start 8 survival quests and White River Trader settlement quest):
+	1.  GreenzonequestPrequel
+	2.  Greenzonequest1
+	3.  RaiderArmy
+	4.  Greenzonequest2 (activates Help the Locals Side Quest)
+	5.  Greenzonequest3  (activates Arsenal Side Quest)
+	6.  Greenzonequest4 (activates Stocking the ER Side Quest)
+	7.  Greenzonequest5
+	8.  Greenzonequest6
+	9.  Greenzonequest7
+	10.  Greenzonequest8
+	11.  Greenzonequest9
+	12.  Greenzonequest10 goes onward
+
+SIDE QUESTS:
+1.  HelptheLocals1 (activated by Greenzonquest2)
+2.  Arsenal1 (activated by Greenzonequest3)
+3.  StockingtheER1 (activated by Greenzonequest4)
+
+	</append>-->
+
+
+	<!-- thanks khzmusik for this Quest is given to player after completing basic survival questline 8/8 -->
+	<insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/reward[@type='Exp']" >
+		<reward type="Quest" id="Greenzonequest1">
+			<property name="chainquest" value="false"/>
+		</reward>
+	</insertAfter>
+
+<append xpath="/quests">
+
+
+<!-- Greenzonequestprequel, the first Green Zone quest, is activated by finishing the White River trader quest that comes with the main game start-->
+
+<quest id="quest_Greenzonequestprequel">
+		<property name="name_key" value="Greenzonequestprequel_name"/>
+		<property name="subtitle_key" value="Greenzonequestprequel_subtitle"/>
+		<property name="description_key" value="Greenzonequestprequel_description"/>
+		<property name="icon" value="ui_game_symbol_pistol"/>
+		<property name="category" value="quest"/>
+		<property name="difficulty" value="easy"/>
+		<property name="shareable" value="false"/>
+
+		<action type="TrackQuest"/>	
+				
+
+		<objective type="RandomGoto" value="150-250" phase="1">
+			<property name="completion_distance" value="50"/>
+			<property name="nav_object" value="quest" />
+		</objective>
+
+		<action type="ShowTip" value="tutorialTipGreenzonequest1"/>		
+		<action type="ShowTip" value="tutorialTipGreenzonequestprequel1" phase="1"/>			
+
+		<objective type="RallyPoint">
+			<property name="start_mode" value="Create"/>
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		
+		<action type="ShowTip" value="tutorialTipGreenzonequestprequel2" phase="2"/>			
+
+<!-- Spawning a nearby soldier survivor and two zombies to keep up the tension, soldier introduces some background setting elements in his comments-->
+
+		<action type="SpawnEnemy" id="survivorSoldier1TRifle" value="1" phase="3"/>
+		<action type="SpawnEnemy" id="zombieFatHawaiian" value="2" phase="3"/>
+		<objective type="ZombieKill" value="2" phase="3"/>
+
+
+
+		<property name="chainquest" value="true"/>
+		<reward type="ShowTip" value="tutorialTipGreenzonequestprequel3" />
+		<reward type="Quest" id="quest_GreenZoneQuest1"/>	
+		<reward type="Exp" value="50"/>
+		
+			
+		
+	</quest>
+
+<!-- i left this Rescue quest off for now, the idea was to eventually have POI's with trapped army and civilians you could rescue as a repeatable quest
+
+<quest id="quest_Rescue">
+
+		<property name="name_key" value="quest_Rescue"/>
+		<property name="subtitle_key" value="quest_Rescue_subtitle"/>
+		<property name="description_key" value="quest_Rescue_offer"/>
+		<property name="icon" value="ui_game_symbol_zombie"/>
+		<property name="repeatable" value="false"/>
+		<property name="category_key" value="quest"/>
+		<property name="offer_key" value="quest_Rescue_offer"/>
+		<property name="difficulty" value="medium"/>
+		
+
+		<objective type="RandomGoto" value="100-200" phase="1">
+			<property name="completion_distance" value="50"/>
+			<property name="nav_object" value="quest" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="start_mode" value="Create"/>
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<action type="SpawnEnemy" id="zombieFatHawaiian" value="15" phase="3"/>
+		<objective type="ZombieKill" id="zombieFatHawaiian" value="15" phase="3"/>
+
+		<action type="SpawnEnemy" id="npcTestFemaleKhzAxe" value="1" phase="3"/>
+		<action type="SpawnEnemy" id="npcFemaleScrubsKhzAShotgun" value="1" phase="3"/>
+		<action type="SpawnEnemy" id="npcMaleCowboyKhzDPistol" value="1" phase="3"/>
+		<action type="SpawnEnemy" id="npcMaleYoung1KhzMachete" value="1" phase="3"/>
+		<action type="SpawnEnemy" id="npcMaleJKhzClub" value="1" phase="3"/>
+
+		<action type="ShowTip" value="You rescued the civilian survivors!" phase="3"/>
+
+		<property name="chainquest" value="false"/>
+
+		<reward type="Exp" value="500"/>
+		
+	</quest>
+-->
+
+
+	<!-- Arsenal Side Quest about accumulating massive ammo for the base and Santa Fe refugees-->
+
+		<quest id="quest_Arsenal1">
+		<property name="group_name_key" value="Arsenal_group_name"/>
+		<property name="name_key" value="Arsenal1_name"/>
+		<property name="subtitle_key" value="Arsenal1_subtitle"/>
+		<property name="description_key" value="Arsenal1_description"/>
+		<property name="icon" value="ui_game_symbol_shotgun"/>
+		<property name="category" value="quest"/>
+		<property name="difficulty" value="medium"/>
+		<property name="offer_key" value="Arsenal1_offer"/>
+		<property name="shareable" value="false"/>
+		
+		<action type="ShowTip" value="tutorialTipArsenal1"/>
+		
+		<objective type="FetchKeep" id="ammo9mmBulletBall" value="1000" phase="1"/>	
+		<objective type="FetchKeep" id="ammoShotgunShell" value="1000" phase="1"/>	
+		<objective type="FetchKeep" id="ammo762mmBulletBall" value="1000" phase="1"/>	
+		<objective type="FetchKeep" id="thrownAmmoMolotovCocktail" value="30" phase="1"/>
+
+		<reward type="SkillPoints" value="3"/>
+		
+
+			<property name="chainquest" value="true"/>
+
+	</quest>
+
+<!-- Stocking the ER (Emergency Room) Side Quest to get proper medical supplies for base and Santa Fe survivors-->
+	
+		<quest id="quest_StockingtheER1">
+		<property name="group_name_key" value="StockingtheER_group_name"/>
+		<property name="name_key" value="StockingtheER1_name"/>
+		<property name="subtitle_key" value="StockingtheER1_subtitle"/>
+		<property name="description_key" value="StockingtheER1_description"/>
+		<property name="icon" value="ui_game_symbol_add"/>
+		<property name="category" value="quest"/>
+		<property name="difficulty" value="medium"/>
+		<property name="offer_key" value="StockingtheER1_offer"/>
+		<property name="shareable" value="false"/>
+		
+		<action type="ShowTip" value="tutorialTipStockingtheER1"/>
+		
+		<objective type="FetchKeep" id="medicalFirstAidBandage" value="20" phase="1"/>
+		<objective type="FetchKeep" id="medicalFirstAidKit" value="10" phase="1"/>
+		<objective type="FetchKeep" id="medicalSplint" value="10" phase="1"/>
+		<objective type="FetchKeep" id="drugAntibiotics" value="10" phase="1"/>
+		<objective type="FetchKeep" id="drugVitamins" value="10" phase="1"/>		
+
+		
+		<reward type="SkillPoints" value="4"/>
+		
+
+			<property name="chainquest" value="true"/>
+
+	</quest>
+
+
+<!-- Start of Greenzone Quests, start simple with just getting some cooking materials to survive-->
+
+	<quest id="quest_GreenZoneQuest1">
+		<property name="group_name_key" value="GreenZonequest_group_name"/>
+		<property name="name_key" value="GreenZonequest1_name"/>
+		<property name="subtitle_key" value="GreenZonequest1_subtitle"/>
+		<property name="description_key" value="GreenZonequest1_description"/>
+		<property name="icon" value="ui_game_symbol_campfire"/>
+		<property name="category" value="quest"/>
+		<property name="difficulty" value="veryeasy"/>
+		<property name="offer_key" value="GreenZonequest_offer"/>
+		<property name="shareable" value="false"/>
+		
+		<action type="ShowTip" value="tutorialTipGreenZoneQuest11"/>
+		<property name="delay" value="20"/>	
+		<action type="ShowTip" value="tutorialTipGreenzonequest1"/>		
+		<action type="TrackQuest"/>	
+		
+		<objective type="FetchKeep" id="toolCookingPot" value="1" phase="1"/>
+		<objective type="FetchKeep" id="toolCookingGrill" value="1" phase="1"/>
+		
+
+	 		
+		<reward type="SkillPoints" value="1"/>
+		<reward type="Quest" id="quest_RaiderArmy"/>
+
+				
+				
+		<property name="chainquest" value="false"/>	
+
+
+	</quest>
+
+<!-- Raider Army... A nearby battle erupts between army soldiers and raiders after the player activates the Rally Point.  This to make the player aware of the danger beyond just zombies with the NPC Mod-->
+
+<quest id="quest_RaiderArmy">
+		<property name="name_key" value="RaiderArmy_name"/>
+		<property name="subtitle_key" value="RaiderArmy_subtitle"/>
+		<property name="description_key" value="RaiderArmy_description"/>
+		<property name="icon" value="ui_game_symbol_shotgun"/>
+		<property name="category" value="quest"/>
+		<property name="difficulty" value="easy"/>
+		<property name="shareable" value="false"/>
+
+		
+
+		<objective type="RandomGoto" value="200-300" phase="1">
+			<property name="completion_distance" value="50"/>
+			<property name="nav_object" value="quest" />
+		</objective>
+
+
+		<action type="ShowTip" value="tutorialTipRaiderArmy1" phase="1"/>			
+
+		<objective type="RallyPoint">
+			<property name="start_mode" value="Create"/>
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+		<!-- Spawning a bunch of Moto Raiders and Army guys fighting them after the player activates the Rally Point-->
+
+		<action type="ShowTip" value="tutorialTipRaiderArmy2" phase="2"/>			
+
+
+			<!--  Took these 5 moto raiders out because the player could get killed instantly  <action type="SpawnEnemy" id="RaiderMotoTRifle" phase="3" />
+			<action type="SpawnEnemy" id="RaiderMotoAK47" phase="3"/>
+			<action type="SpawnEnemy" id="RaiderSluggerM60" phase="3"/>
+			<action type="SpawnEnemy" id="RaiderMotoDPistol" phase="3"/>
+			<action type="SpawnEnemy" id="RaiderMotoTRifle" phase="3"/> -->
+
+			<action type="SpawnEnemy" id="RaiderMotoBat" phase="3"/>
+			<action type="SpawnEnemy" id="RaiderMotoAxe" phase="3"/>
+			<action type="SpawnEnemy" id="RaiderMotoTRifle" phase="3"/>
+			<action type="SpawnEnemy" id="RaiderSluggerAxe" phase="3"/>
+
+		<action type="SpawnEnemy" id="survivorSoldier1TRifle" value="4" phase="3"/>
+		<action type="SpawnEnemy" id="survivorSoldier1Club" value="2" phase="3"/>
+
+		<objective type="ZombieKill" value="1" phase="3"/>
+
+
+
+		<property name="chainquest" value="true"/>
+		<reward type="ShowTip" value="tutorialTipRaiderArmy3" />
+		<reward type="Quest" id="quest_GreenZoneQuest2"/>	
+
+		<reward type="Exp" value="50"/>
+		
+					
+	</quest>
+
+<!-- Green Zone Quest 2 introduces the Help the Locals Side Quest and pushes the player into action and exploring and killing some nearby zombies-->
+
+	<quest id="quest_GreenZoneQuest2">
+		<property name="name_key" value="GreenZonequest2_name"/>
+		<property name="subtitle_key" value="GreenZonequest2_subtitle"/>
+		<property name="description_key" value="GreenZonequest2_description"/>
+		<property name="icon" value="ui_game_symbol_shotgun"/>
+		<property name="category" value="quest"/>
+		<property name="difficulty" value="easy"/>
+		<property name="shareable" value="false"/>
+
+		<action type="ShowTip" value="tutorialTipGreenzonequest2"/>  
+		
+		<objective type="ZombieKill" value="25" phase="1"/>
+		
+
+		
+		<reward type="Quest" id="quest_GreenZoneQuest3" phase="2"/>
+		
+		<reward type="SkillPoints" value="2"/>
+		<reward type="Quest" id="quest_HelptheLocals1">
+
+
+		<!-- TESTING TESTING TESTING LINE 211 delay 13 IS A TEST FEB 6th-->
+		<property name="delay" value="13"/>
+		<property name="chainquest" value="false"/>
+		</reward>				
+		
+	</quest>
+
+<!-- Side Quest Help the Locals emphasizes the player earning 20k Casino Coins from White River trader quests and finding all 5 White
+River trader settlements. This represents building alliances with the locals and securing a place for the Santa Fe refugees in this local area.  I struggled
+to make finding each trader check off per phase so settled on earning a ton of coins.-->
+
+<quest id="quest_HelpTheLocals1">
+
+		<property name="group_name_key" value="HelpTheLocals_group_name"/>
+		<property name="name_key" value="HelpTheLocals1_name"/>
+		<property name="subtitle_key" value="HelpTheLocals1_subtitle"/>
+		<property name="description_key" value="HelpTheLocals1_description"/>
+		<property name="icon" value="ui_game_symbol_climb"/>
+		<property name="category" value="quest"/>
+		<property name="difficulty" value="medium"/>
+		<property name="offer_key" value="HelpTheLocals1_offer"/>
+		<property name="shareable" value="false"/>
+
+		<property name="completiontype" value="AutoComplete"/>
+		<property name="return_to_quest_giver" value="false" />
+
+		
+		<action type="ShowTip" value="tutorialTipHelpTheLocals1"/>
+		
+
+<!-- so below till next green is the working section from Furious Ramsay's next trader quest-->
+
+		<objective type="Goto" id="trader" value="5" phase="1">
+				<property name="nav_object" value="go_to_trader" />
+			</objective>
+
+		<!---	<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+				<property name="use_closest" value="true" />   -->
+
+			<objective type="FetchKeep" id="casinoCoin" value="20000" phase="1"/>				
+			
+			<action type="ShowTip" value="tutorialTipHelpTheLocals2" phase="2"/>
+
+	
+		<objective type="ZombieKill" value="1" phase="2"/>
+
+
+		<!-- so above is the working section from Furious Ramsay's next trader quest-->
+
+
+				
+		<reward type="SkillPoints" value="5"/>
+
+
+		<property name="chainquest" value="true"/>
+
+	</quest>
+
+
+<!-- Factory of Civilization Green Zone Quest 3 requires the player to get producing assets for the base.   -->
+	
+	<quest id="quest_GreenZoneQuest3">
+		<property name="name_key" value="GreenZonequest3_name"/>
+		<property name="subtitle_key" value="GreenZonequest3_subtitle"/>
+		<property name="description_key" value="GreenZonequest3_description"/>
+		<property name="icon" value="ui_game_symbol_workbench"/>
+		<property name="category" value="quest"/>
+		<property name="difficulty" value="easy"/>
+		<property name="shareable" value="false"/>
+
+		<objective type="FetchKeep" id="workbench" value="1" phase="1"/>
+		<objective type="FetchKeep" id="forge" value="1" phase="1"/>
+		<objective type="FetchKeep" id="chemistryStation" value="1" phase="1"/>
+		<objective type="FetchKeep" id="toolAnvil" value="1" phase="1"/>
+		<objective type="FetchKeep" id="toolBeaker" value="1" phase="1"/>
+		
+		<action type="ShowTip" value="tutorialTipGreenzonequest3"/>
+
+
+		<reward type="SkillPoints" value="2"/>
+		<reward type="Quest" id="quest_GreenZoneQuest4"/>
+		<reward type="Quest" id="quest_Arsenal1">
+		
+		<property name="chainquest" value="false"/>
+		
+		</reward>	
+
+	</quest>
+
+<!-- Get Some Wheels, Green Zone Quest 4 pushes the player to get a minibike and to rescue some civilian survivors and bring them back to base. -->
+
+<quest id="quest_GreenZoneQuest4">
+		<property name="name_key" value="GreenZonequest4_name"/>
+		<property name="subtitle_key" value="GreenZonequest4_subtitle"/>
+		<property name="description_key" value="GreenZonequest4_description"/>
+		<property name="icon" value="ui_game_symbol_shotgun"/>
+		<property name="category" value="quest"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+
+		
+		<objective type="FetchKeep" id="vehicleMinibikePlaceable" value="1" phase="1"/>
+		<objective type="ZombieKill" value="50" phase="1"/>
+
+		<action type="ShowTip" value="tutorialTipGreenzonequest4"/>			
+
+		<reward type="SkillPoints" value="2"/>
+		<reward type="Quest" id="quest_GreenZoneQuest5"/>
+		<reward type="Quest" id="quest_StockingtheER1">
+		
+		<property name="chainquest" value="false"/>
+		
+		</reward>	
+		
+	</quest>
+
+<!-- Plant a farm.  The player needs to get some basic farming going to feed locals and the Santa Fe refugees.  -->
+
+	<quest id="quest_GreenZoneQuest5">
+		<property name="group_name_key" value="GreenZonequest_group_name"/>
+		<property name="name_key" value="GreenZonequest5_name"/>
+		<property name="subtitle_key" value="GreenZonequest5_subtitle"/>
+		<property name="description_key" value="GreenZonequest5_description"/>
+		<property name="icon" value="ui_game_symbol_foliage"/>
+		<property name="category" value="quest"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+		
+			
+		<objective type="FetchKeep" id="plantedCorn1" value="40" phase="1"/>
+		<objective type="FetchKeep" id="ammoGasCan" value="1000" phase="1"/>
+		<objective type="FetchKeep" id="plantedPumpkin1" value="5" phase="1"/>
+
+		<action type="ShowTip" value="tutorialTipGreenzonequest5"/>
+
+
+
+
+
+		<property name="chainquest" value="false"/>
+
+		<reward type="SkillPoints" value="3"/>
+		<reward type="Quest" id="quest_GreenZoneQuest6"/>
+
+		
+
+	</quest>
+
+<!-- Maxing out the Luxury, Green Zone Quest 6.  If you’re gonna fortify this Green Zone base, you might as well do it in style.  Can you imagine the look on the Santa Fe refugee’s faces when they see what kind of base you’ve made for them? 
+Find/craft the following amenities below, including two Halloween Jack O Lanterns (for the kids, for the baby).   Oh and build an electric fence to the keep the bad guys out.  Items must be in your inventory to count for quest goals.  Once you achieve the goal you can use or store the items elsewhere.
+ -->
+
+<quest id="quest_GreenZoneQuest6">
+		<property name="name_key" value="GreenZonequest6_name"/>
+		<property name="subtitle_key" value="GreenZonequest6_subtitle"/>
+		<property name="description_key" value="GreenZonequest6_description"/>
+		<property name="icon" value="ui_game_symbol_adventure"/>
+		<property name="category" value="quest"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+
+		<objective type="ZombieKill" value="75" phase="1"/>
+
+
+
+		<action type="ShowTip" value="tutorialTipGreenzonequest6"/>
+
+		
+		<!-- <objective type="Craft" id="bed02" value="10" phase="1"/> -->
+		<objective type="FetchKeep" id="decoPumpkinJackOLantern" value="2" phase="1"/>
+		<objective type="FetchKeep" id="electricfencepost" value="4" phase="1"/>
+		<objective type="FetchKeep" id="generatorbank" value="2" phase="1"/>
+		<objective type="FetchKeep" id="meleeToolWireTool" value="1" phase="1"/>
+		<objective type="FetchKeep" id="smallEngine" value="3" phase="1"/>
+		
+
+		<property name="chainquest" value="false"/>	
+
+		<reward type="SkillPoints" value="4"/>
+		<reward type="Quest" id="quest_GreenZoneQuest7"/>
+		
+		
+		
+	</quest>
+
+<!-- More Wheels, Green Zone quest 7 logistics for the base.  The base could use a truck to haul supplies and a gyrocopter to scout the nearby counties.  
+Get a 4x4 truck and a gyrocopter somehow.    Rescue 3 more NPC survivors (hired with casino coins) and bring them back to base.
+
+When your dreams are of some world that never was or of some world that never will be and you are happy again then you will have given up. Do you understand? 
+And you can’t give up. I won’t let you.  -Cormac McCarthy, The Road
+-->
+
+	<quest id="quest_GreenZoneQuest7">
+		<property name="group_name_key" value="GreenZonequest_group_name"/>
+		<property name="name_key" value="GreenZonequest7_name"/>
+		<property name="subtitle_key" value="GreenZonequest7_subtitle"/>
+		<property name="description_key" value="GreenZonequest7_description"/>
+		<property name="icon" value="ui_game_symbol_service"/>
+		<property name="category" value="quest"/>
+		<property name="difficulty" value="hard"/>
+		<property name="shareable" value="false"/>
+		
+		<action type="ShowTip" value="tutorialTipGreenzonequest7"/>
+
+
+		<objective type="FetchKeep" id="vehicle4x4TruckPlaceable" value="1" phase="1"/>
+		<objective type="FetchKeep" id="vehicleGyrocopterPlaceable" value="1" phase="1"/>
+
+<!--  	Pumpkin pie for quest 7 baby cravings
+		
+		<objective type="FetchKeep" id="plantedPumpkin1" value="5" phase="1"/> -->		
+		
+		<property name="chainquest" value="false"/>	
+
+		<reward type="SkillPoints" value="4"/>
+		<reward type="Quest" id="quest_GreenZoneQuest8"/>
+	</quest>
+
+
+<!-- Green Zone Quest 8  March toward the Sound of the Guns
+You hear loud gunfire in the distance.  More than normal.  This could be ugly, better get myself ready. 
+Then get over there, activate the rally point and see what’s going on.
+-->
+
+<quest id="quest_GreenZoneQuest8">
+		<property name="name_key" value="GreenZonequest8_name"/>
+		<property name="subtitle_key" value="GreenZonequest8_subtitle"/>
+		<property name="description_key" value="GreenZonequest8_description"/>
+		<property name="icon" value="ui_game_symbol_explosion"/>
+		<property name="category" value="quest"/>
+		<property name="difficulty" value="medium"/>
+		<property name="shareable" value="false"/>
+
+
+		<action type="ShowTip" value="tutorialTipGreenzonequest8"/>
+
+	<objective type="RandomGoto" value="600-700" phase="1">
+			<property name="completion_distance" value="50"/>
+			<property name="nav_object" value="quest" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="start_mode" value="Create"/>
+			<property name="phase" value="2"/>
+			<property name="nav_object" value="rally" />
+		</objective>
+
+
+
+		<action type="SpawnEnemy" id="zombieBikerRadiated" value="5" phase="3"/>
+		<!-- property name delay 10 and action below are TESTING TESTING TESTING-->
+		                <!-- <property name="delay" value="10"/> -->
+						
+		<objective type="ZombieKill" value="5" phase="3"/>
+						
+		<action type="SpawnEnemy" id="survivorSoldier1TRifle" value="1" phase="3"/>
+		<action type="SpawnEnemy" id="survivorSoldier1TRifle" value="1" phase="3"/>
+		<action type="SpawnEnemy" id="npcTestFemaleKhzAxe" value="1" phase="3"/>
+		<action type="SpawnEnemy" id="npcTestFemaleKhzPipePistol" value="1" phase="3"/>
+		<action type="SpawnEnemy" id="npcFemaleScrubsKhzAShotgun" value="1" phase="3"/>
+		<action type="SpawnEnemy" id="npcMaleCowboyKhzDPistol" value="1" phase="3"/>
+		<action type="SpawnEnemy" id="npcMaleYoung1KhzMachete" value="1" phase="3"/>
+		<action type="SpawnEnemy" id="npcMaleJKhzClub" value="1" phase="3"/>
+
+		<!-- <objective type="ZombieKill" id="QC_zombieArlene,QC_zombieDarlene,QC_zombieMarlene,QC_zombieBoe,QC_zombieJoe,QC_zombieMoe,QC_zombieYo,QC_zombieFatHawaiian,QC_zombieFemaleFat" value="16" phase="1"/> -->
+
+
+
+		<!-- <objective type="ZombieKill" value="1" phase="1"/> FOR NOW TURNED OFF TESTING TESTING TESTING--> 
+			
+		<property name="chainquest" value="false"/>	
+
+		<reward type="SkillPoints" value="4"/>
+		<reward type="Quest" id="quest_GreenZoneQuest9"/>
+
+<!-- Below are some suggestions from khzmusik that worked but that i tabled in favor of using SpawnEnemy command instead.  Keeping these just in case i need them later.-->
+		<!-- <reward type="GiveNPCSDX, SCore" id="npcFriendlyBossGroupGS200" /> --> 
+		<!-- Spawns in an entity from the group to be your NPC -->
+		<!-- <reward type="GiveNPCSDX, SCore" /> -->
+		<!-- Hires the current NPC -->	
+
+		
+		<!-- THIS THE OLD ENTITY GROUP THAT WORKED FOR SURE FROM <reward type="GiveNPCSDX, SCore" id="npcFriendlyRangedGroupGS100" /> < Spawns in an entity from the group to be your NPC -->
+
+
+		
+	</quest>
+
+<!-- Green Zone Quest 9, now the player has met the advance guard from Santa Fe and gets a tutorial tip victory message.-->
+
+	<quest id="quest_GreenZoneQuest9">
+		<property name="group_name_key" value="GreenZonequest_group_name"/>
+		<property name="name_key" value="GreenZonequest9_name"/>
+		<property name="subtitle_key" value="GreenZonequest9_subtitle"/>
+		<property name="description_key" value="GreenZonequest9_description"/>
+		<property name="icon" value="ui_game_symbol_shotgun"/>
+		<property name="category" value="quest"/>
+		<property name="difficulty" value="easy"/>
+		<property name="shareable" value="false"/>
+
+		<action type="ShowTip" value="tutorialTipGreenzonequest9"/>
+
+		<objective type="ZombieKill" value="5" phase="1"/>
+
+		<property name="chainquest" value="false"/>	
+	
+		
+
+		
+		<reward type="SkillPoints" value="1"/>
+		<reward type="Quest" id="quest_GreenZoneQuest10"/>
+		
+
+	</quest>
+
+<!-- for players who want to keep going in their world, this gives an ongoing quest to make Solar Power and then kill endless zombies-->
+
+	<quest id="quest_GreenZoneQuest10">
+		<property name="group_name_key" value="GreenZonequest_group_name"/>
+		<property name="name_key" value="GreenZonequest10_name"/>
+		<property name="subtitle_key" value="GreenZonequest10_subtitle"/>
+		<property name="description_key" value="GreenZonequest10_description"/>
+		<property name="icon" value="ui_game_symbol_scrap"/>
+		<property name="category" value="quest"/>
+		<property name="difficulty" value="hard"/>
+		<property name="shareable" value="false"/>
+
+		<action type="ShowTip" value="tutorialTipGreenzonequest10"/>
+
+		<objective type="ZombieKill" value="2000" phase="1"/>
+		<objective type="FetchKeep" id="solarbank" value="2" phase="1"/>
+
+		<objective type="ZombieKill" value="3000" phase="2"/>
+		<action type="ShowTip" value="tutorialTipGreenzoneOnward1" phase="2"/>
+
+		<objective type="ZombieKill" value="4000" phase="3"/>
+		<action type="ShowTip" value="tutorialTipGreenzoneOnward2" phase="3"/>
+
+		<objective type="ZombieKill" value="5000" phase="4"/>
+		<action type="ShowTip" value="tutorialTipGreenzoneOnward3" phase="4"/>
+
+		<property name="chainquest" value="true"/>	
+
+		<reward type="SkillPoints" value="5"/>
+			
+
+	</quest>
+
+	
+</append>
+	
+	<!-- thanks khzmusik for this Quest is given to player after completing basic survival questline 8/8 -->
+	<insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/reward[@type='Exp']" >
+
+		<reward type="Quest" id="quest_Greenzonequestprequel">
+			<property name="chainquest" value="false"/>
+		</reward>
+	</insertAfter>
+
+
+</configs>
+
+<!-- Thanks for playing!  God bless!  work22  -->

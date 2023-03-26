@@ -1,0 +1,268 @@
+,File,Type,UsedInGreenZoneMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+
+
+
+Greenzonequestprequel_name,Quest,Quest Info,,,Whats that sound?
+Greenzonequestprequel_subtitle,Quest,Quest Info,,,Whats that sound?
+Greenzonequestprequel_description,Quest,Quest Info,,,"Whats that sound?"
+
+
+
+tutorialTipGreenzonequestprequel1_title,Journal Tip,,,,Whats that sound?
+tutorialTipGreenzonequestprequel1,Journal Tip,,,,"What's that sound nearby?
+Sounds like we got movement over there.  I should check it out, carefully...
+If you miss a screen tip like this, you can see it in the journal entries too."
+
+
+tutorialTipGreenzonequestprequel2_title,Journal Tip,,,,Survivor Soldier
+tutorialTipGreenzonequestprequel2,Journal Tip,,,,"You hear someone yelling through a gas mask.  
+Hey man!  He shouts.  Dont shoot!  Dont shoot!  Thanks.  Relief not to get shot at again.  You would NOT believe some of the crazies around here.  Where you from?  Santa Fe you say?  Yeh, the Air Force tore that place up.  Look man I am trying to find whats left of my platoon.  Everybody scattered when Battalion HQ got infected.  So hey think twice before you shoot.  Lots of my buddies around here.
+Activate the Rally Point and then look around to find the soldier.  Then kill two zombies to proceed with the questline."
+
+
+tutorialTipGreenzonequestprequel3_title,Journal Tip,,,,Survivor Soldier
+tutorialTipGreenzonequestprequel3,Journal Tip,,,,"The soldier shouts at you again.  Like I said man watch out and careful who you shoot at.  My platoon is all over the place and so are some civilians.   I gotta get outta here.  Good luck!
+If you miss a screen tip like this, you can see it in the journal entries too."
+
+
+RaiderArmy_name,Quest,Quest Info,,,Gunfire!
+RaiderArmy_subtitle,Quest,Quest Info,,,Gunfire!
+RaiderArmy_description,Quest,Quest Info,,,"Gunfire!"
+
+tutorialTipRaiderArmy1_title,Journal Tip,,,,Gunfire!
+tutorialTipRaiderArmy1,Journal Tip,,,,"Gunfire.  Screams, yells.  Sounds of pain.  Coming from the distance.  It sounds almost like, people shooting each other and not zombies.  
+Head to the Rally Point to investigate the shooting."
+
+
+tutorialTipRaiderArmy2_title,Journal Tip,,,,Gunfire!
+tutorialTipRaiderArmy2,Journal Tip,,,,"Getting closer… almost there, get yourself ready. 
+Activate the Rally Point and later kill at least one zombie to continue the quests."
+
+
+tutorialTipRaiderArmy3_title,Journal Tip,,,,Gunfire!
+tutorialTipRaiderArmy3,Journal Tip,,,,"I just witnessed a battle between army soldiers and local bandits.  As if trying to survive and find a home for my fellow Santa Fe refugees wasn’t enough, now I’ve got to try and save Western civilization from bandits and raiders too!"
+
+
+
+
+
+
+
+tutorialTipGreenzonequest0_title,Journal Tip,,,,WELCOME TO THE GREEN ZONE
+tutorialTipGreenzonequest0,Journal Tip,,,,"WELCOME to the Green Zone Quest mod!  I hope you enjoy it.  The Green Zone quest will begin after you finish the first locate White River Trader quest.  In addition to fighting and surviving, building and farming will be important to the Green Zone story and your adventures will cover much of the map.
+Green Zone is a complimentary set of story based quests that can run alongside the White River trader quests and other mods you may have installed like Rebirth.  You can switch active quests at your leisure and finish the Green Zone story at your own pace."
+GreenZonequest0_name,Quest,Quest Info,,,,"WELCOME to the Green Zone Quest mod!  I hope you enjoy it.  The Green Zone quest will begin after you finish the first locate White River Trader quest.  In addition to fighting and surviving, building and farming will be important to the Green Zone story and your adventures will cover much of the map.
+Green Zone is a complimentary set of story based quests that can run alongside the White River trader quests and other mods you may have installed like Rebirth.  You can switch active quests at your leisure and finish the Green Zone story at your own pace."
+GreenZonequest0_subtitle,Quest,Quest Info,,,,Green Zone Quest Starts Later 
+GreenZonequest0_description,Quest,Quest Info,,,,"WELCOME to the Green Zone Quest mod!  I hope you enjoy it.  The Green Zone quest will begin after you finish the first locate White River Trader quest.  In addition to fighting and surviving, building and farming will be important to the Green Zone story and your adventures will cover much of the map.
+Green Zone is a complimentary set of story based quests that can run alongside the White River trader quests and other mods you may have installed like Rebirth.  You can switch active quests at your leisure and finish the Green Zone story at your own pace."
+
+
+
+tutorialTipGreenzonequest1_title,Journal Tip,,,,Green Zone 
+
+tutorialTipGreenzonequest1,Journal Tip,,,,"I can tell this trader has heard it all.  Every sob story, tragedy, and miracle of survival, that brought people like me here.  To the trader, I’m just another survivor to barter with over the relics of a past civilization.  But I came here 305 miles from Santa Fe on a mission.  I left behind loved ones, survivors, desparate for help.
+The harvest failed us survivors back in Santa Fe.  Barely any Yucca left.  We survived zombie horde nights and Air Force jets bombing any town with a zombie infection.  But now the bombing has stopped, the power’s gone, and there’s no word from the rest of the world.  All the survivors know we won’t last another winter without food.  So either we find a new home, or start drawing straws.  Scouts volunteered to go in all directions— none returned.  So they sent me here to scout White River County.  Find us a home, she said.  Find us a home.  But more on that later.  First, to survive…"
+
+
+
+tutorialTipGreenZoneQuest1_title,Journal Tip,,,,Green Zone 
+
+GreenZonequest_offer,Quest,Quest Info,,,"WHERE IS THIS BEING WRITTEN"
+GreenZonequest_group_name,Quest,Quest Info,,,GreenZone Quest 1 - Carrying the Fire
+
+GreenZonequest1_name,Quest,Quest Info,,,GreenZone Quest 1/9
+GreenZonequest1_subtitle,Quest,Quest Info,,,Carrying the Fire 
+GreenZonequest1_description,Quest,Quest Info,,,"The harvest failed at Santa Fe.  Barely enough Yucca to feed us survivors who’ve been through so much.  We’ve already survived a dozen horde nights and the Air Force jets bombing any building, town or county with a zombie infection.
+But now the bombing has stopped, the power’s gone, and there’s no word from the rest of the world.  All the survivors know we won’t last another winter in Santa Fe.  So either we find a new home, or start drawing straws.  Scouts volunteered to go in all directions— none returned.  So they sent me.  Find us a home, she said.  Find us a home.  But more on that later.
+First, to survive…
+Find/craft these items to help you survive before building your Green Zone base.  Items must be in your inventory to count for quest goals.  Once you achieve the goal you can use or store the items elsewhere."
+
+
+tutorialTipGreenZoneQuest11_title,Journal Tip,,,,Carrying the Fire
+tutorialTipGreenZoneQuest11,Journal Tip,,,,"Quest 1, Carrying the Fire, is the first main quest. The Green Zone plot line, however, has 9 main quests and 3 side quests as you collect resources and complete missions to help the survivors of Santa Fe restart civilization.  You can toggle between quests at your convenience as you reach your goals.  The quest's status is displayed on the Objective Tracker in the top right of the screen. For more information on quests, access your Inventory and navigate to the Quests menu."
+
+
+
+GreenZonequest2_name,Quest,Quest Info,,,GreenZone Quest 2/9
+GreenZonequest2_subtitle,Quest,Quest Info,,,Clear away some Zombies Quest 2/9
+GreenZonequest2_description,Quest,Quest Info,,,"Clear away some zombies from the area and start thinking about where you might build a base.  Preferably near water, and maybe some civilians if there any civilized ones left here.  If there are, trying hiring some to help you, they may be happy to join the Santa Fe refugee base.
+Make it safe for us, she said before I left Santa Fe.  She pressed my hand to her swollen belly, to feel our baby kicking.  I know you don’t want to go, she said, tears in her eyes.  I don’t want you to either.  She looked around at the other haggard, weary survivors in the dugout.  Pray for us.  They won’t make it to spring if we don’t find somewhere else.  Go, find us a home, make it safe for us in the new world we'll build together."
+
+
+
+tutorialTipGreenzonequest2_title,Journal Tip,,,,Make it Safe for Us
+tutorialTipGreenzonequest2,Journal Tip,,,,"Clear away some zombies from the area and start thinking about where you might build a base.  Preferably near water, and maybe some civilians if there any civilized ones left here.  If there are, trying hiring some to help you, they may be happy to join the Santa Fe refugee base.
+Make it safe for us, she said before I left Santa Fe.  She pressed my hand to her swollen belly, to feel our baby kicking.  I know you don’t want to go, she said, tears in her eyes.  I don’t want you to either.  She looked around at the other haggard, weary survivors in the dugout.  Pray for us.  They won’t make it to spring if we don’t find somewhere else.  Go, find us a home, make it safe for us in the new world we'll build together."
+
+
+
+
+
+GreenZonequest3_name,Quest,Quest Info,,,GreenZone Quest 3/9
+GreenZonequest3_subtitle,Quest,Quest Info,,,Factory of Civilization
+GreenZonequest3_description,Quest,Quest Info,,,"Why?  I once asked her.  Why should we keep trying amid all this carnage and destruction?  When our own Air Force bombs and nukes us?    
+Because we’re carrying the fire, she said.  What will happen to civilization if we don’t rebuild, re-plant seeds, give the kids among us a better life?  Hope is our divine fuel.  We have to believe still in something greater than ourselves.
+Maybe she’s right.  Maybe we can create something new here.  Build what the Army veterans among us call a Green Zone.  A giant, fortified base with its own basics and amenities-- water, electricity, everything from TV’s to a working farm and hospital.  God willing, a place where the kids can laugh and play again.  Maybe…
+Place a Land Claim block in what you think is the best location for a base, preferably near water and a White River trading settlement.  Find/craft these productive assets needed to build out the Green Zone Base.  Items must be in your inventory to count for quest goals.  Once you achieve the goal you can use or store the items elsewhere."
+
+
+tutorialTipGreenzonequest3_title,Journal Tip,,,,Factory of Civilization
+tutorialTipGreenzonequest3,Journal Tip,,,,"Why?  I asked her.  Why should we keep trying amid all this carnage and destruction?  When our own Air Force bombs and nukes us?  
+Because we’re carrying the fire, she said.  What will happen to civilization if we don’t rebuild, re-plant seeds, give the kids among us a better life?   
+Find/craft these productive assets needed to build out the Green Zone Base.  Items must be in your inventory to count for quest goals.  Once you achieve the goal you can use or store the items elsewhere."
+
+
+GreenZonequest4_name,Quest,Quest Info,,,GreenZone Quest 4/9
+GreenZonequest4_subtitle,Quest,Quest Info,,,Get Some Wheels
+GreenZonequest4_description,Quest,Quest Info,,,"There may be other survivors out there we can rescue.  Get some wheels (a mini bike) and try to bring back at least 3 NPC survivors (hired with casino coins) back to your base.  You can put them on Guard or Stay duty.  Oh, and kill some zombies.
+The one thing I can tell you is that you won’t survive for yourself. I know because I would never have come this far.  A person who had no one would be well advised to cobble together some passable ghost. Breathe it into being and coax it along with words of love. ---Cormac McCarthy, The Road."
+
+
+tutorialTipGreenzonequest4_title,Journal Tip,,,,Get Some Wheels 4/9
+tutorialTipGreenzonequest4,Journal Tip,,,,"There may be other survivors out there we can rescue.  Get some wheels (a mini bike) and try to bring back at least 3 NPC survivors (hired with casino coins) back to your base.  You can put them on Guard or Stay duty.  Oh, and kill some zombies.
+The one thing I can tell you is that you won’t survive for yourself. I know because I would never have come this far.  A person who had no one would be well advised to cobble together some passable ghost. Breathe it into being and coax it along with words of love. ---Cormac McCarthy, The Road."
+
+
+
+GreenZonequest5_name,Quest,Quest Info,,,GreenZone Quest 5/9
+GreenZonequest5_subtitle,Quest,Quest Info,,,Mouths to Feed 
+GreenZonequest5_description,Quest,Quest Info,,,"More survivors here and more coming from Santa Fe means more mouths to feed.  Plant a farm.  She likes Pumpkin Pie, by the way, and had pregnancy cravings for it before you left.
+And more survivors, more walls needed.  Build some serious fortifications at your discretion.  Don't forget to take some screenshots of your growing base and post them on the 7 Days Forums.  Items must be in your inventory to count for quest goals.  Once you achieve the goal you can use or store the items elsewhere.  And start taking some screenshots of your base in progress!"
+
+
+tutorialTipGreenzonequest5_title,Journal Tip,,,,Feeding the survivors 5/9
+tutorialTipGreenzonequest5,Journal Tip,,,,"More survivors here and more coming from Santa Fe means more mouths to feed.  Plant a farm.  She likes Pumpkin Pie, by the way, and had pregnancy cravings for it before you left.
+And more survivors, more walls needed.  Build some serious fortifications at your discretion.  Don't forget to take some screenshots of your growing base and post them on the 7 Days Forums.  Items must be in your inventory to count for quest goals.  Once you achieve the goal you can use or store the items elsewhere.  And start taking some screenshots of your base in progress!"
+
+
+
+
+GreenZonequest6_name,Quest,Quest Info,,,GreenZone Quest 6/9
+GreenZonequest6_subtitle,Quest,Quest Info,,,Max out the Luxury Quest 6/9
+GreenZonequest6_description,Quest,Quest Info,,,"If you’re gonna fortify this Green Zone base, you might as well do it in style.  Can you imagine the look on the Santa Fe refugee’s faces when they see what kind of luxury base you’ve made for them? 
+Find/craft the following amenities below, including two Halloween Jack O Lanterns (for the kids, for the baby).  Oh and build an electric fence to keep the bad guys out.  Street lights outside the base would be nice too.  Items must be in your inventory to count for quest goals.  Once you achieve the goal you can use or store the items elsewhere."
+
+tutorialTipGreenzonequest6_title,Journal Tip,,,,Max out the Luxury Quest 6/9
+tutorialTipGreenzonequest6,Journal Tip,,,,"If you’re gonna fortify this Green Zone base, you might as well do it in style.  Can you imagine the look on the Santa Fe refugee’s faces when they see what kind of luxury base you’ve made for them? 
+Find/craft the following amenities, including two Halloween Jack O Lanterns (for the kids, for the baby).  Oh and build an electric fence to keep the bad guys out.  Street lights outside the base would be nice too.  Items must be in your inventory to count for quest goals.  Once you achieve the goal you can use or store the items elsewhere."
+
+
+
+
+
+GreenZonequest7_name,Quest,Quest Info,,,GreenZone Quest 7/9
+GreenZonequest7_subtitle,Quest,Quest Info,,,Getting some Wheels
+GreenZonequest7_description,Quest,Quest Info,,,"The base could use a truck to haul supplies and a gyrocopter to scout the nearby counties.  Get a 4x4 truck and a gyrocopter somehow.  Rescue 3 more NPC survivors (hired with casino coins) and bring them back to base.  Build a helipad at your base as well.
+When your dreams are of some world that never was or of some world that never will be and you are happy again then you will have given up. Do you understand? And you can’t give up. I won’t let you.  ---Cormac McCarthy, The Road"
+
+tutorialTipGreenzonequest7_title,Journal Tip,,,,Get some Wheels 7/9
+tutorialTipGreenzonequest7,Journal Tip,,,,"The base could use a truck to haul supplies and a gyrocopter to scout the nearby counties.  Get a 4x4 truck and a gyrocopter somehow.  Rescue 3 more NPC survivors (hired with casino coins) and bring them back to base.  Build a helipad at your base as well.
+When your dreams are of some world that never was or of some world that never will be and you are happy again then you will have given up. Do you understand? And you can’t give up. I won’t let you.  ---Cormac McCarthy, The Road"
+
+
+
+GreenZonequest8_name,Quest,Quest Info,,,GreenZone Quest 8/9
+GreenZonequest8_subtitle,Quest,Quest Info,,,March toward the Sound of the Guns 8/9
+GreenZonequest8_description,Quest,Quest Info,,,"You hear loud gunfire in the distance.  More than normal.  Get over there, activate the rally point and see what’s going on."
+
+tutorialTipGreenzonequest8_title,Journal Tip,,,,March toward the Sound of the Guns 8/9
+tutorialTipGreenzonequest8,Journal Tip,,,,"You hear loud gunfire in the distance.  More than normal.  Get over there, activate the rally point and see what’s going on."
+
+
+
+
+GreenZonequest9_name,Quest,Quest Info,,,GreenZone Quest 9/9
+GreenZonequest9_subtitle,Quest,Quest Info,,,Survival and Triumph
+GreenZonequest9_description,Quest,Quest Info,,,"After catching their breath and reloading, some of the survivors come over to you.  We’re the advance guard from Santa Fe.  We knew we had to leave and we voted to come to the county you were assigned to scout.  The rest are behind us and will be here shortly. 
+Soon you see the column of Santa Fe survivors straggling toward you, slowly.  But as they come closer and see you standing there smiling, they begin to smile too.  You tell them about the new base, and they begin to cheer. They drop their packs and rush forward to hug and scream and celebrate.  And from the throng, she emerges, smiling, hands on her very swollen belly.  Looking right at you.  I knew you could do it, she shouts, I knew you could do it!!!"
+
+
+tutorialTipGreenzonequest9_title,Journal Tip,,,,Survival and Triumph 9/9
+tutorialTipGreenzonequest9,Journal Tip,,,,"After catching their breath and reloading, some of the survivors come over to you.  We’re the advance guard from Santa Fe.  We knew we had to leave and we voted to come to the county you were assigned to scout.  The rest are behind us and will be here shortly. 
+Soon you see the column of Santa Fe survivors straggling toward you, slowly.  But as they come closer and see you standing there smiling, they begin to smile too.  You tell them about the new base, and they begin to cheer. They drop their packs and rush forward to hug and scream and celebrate.  And from the throng, she emerges, smiling, hands on her very swollen belly.  Looking right at you.  I knew you could do it, she shouts, I knew you could do it!!!"
+
+
+
+
+GreenZonequest10_name,Quest,Quest Info,,,Greenzone Quest Onward
+GreenZonequest10_subtitle,Quest,Quest Info,,,Greenzone Quest Onward
+GreenZonequest10_description,Quest,Quest Info,,,"Congratulations!  You did it, you completed the Green Zone Quest!  Take a screenshot of your new base with Jack O Lantern and post it on the 7 Days forums Green Zone thread and or DM me that you finished the game.  God bless you and thanks for playing!  
+And if you’ve made it this far, might as well make your Green Zone as green as can be.  Find solar power for the base!  Don't just make your base safe, make the county safe for civilization!  Kill 2,000 zombies."
+
+
+tutorialTipGreenzonequest10_title,Journal Tip,,,,Going Green Bonus Quest Onward
+tutorialTipGreenzonequest10,Journal Tip,,,,"Congratulations!  You did it, you completed the Green Zone Quest!  Take a screenshot of your new base with Jack O Lantern and post it on the 7 Days forums Green Zone thread and or DM me that you finished the game.  God bless you and thanks for playing!  
+And if you’ve made it this far, might as well make your Green Zone as green as can be.  Find solar power for the base!  Don't just make your base safe, make the county safe for civilization!  Kill 2,000 zombies."
+
+
+
+tutorialTipGreenzoneOnward1_title,Journal Tip,,,,Going Green Bonus Quest Onward
+tutorialTipGreenzoneOnward1,Journal Tip,,,,"You are the Attila the Hun of Anti-Zombies.  Keep going, clear more zombies to make it safe for the survivors of both Santa Fe and the locals."
+
+
+tutorialTipGreenzoneOnward2_title,Journal Tip,,,,Going Green Bonus Quest Onward
+tutorialTipGreenzoneOnward2,Journal Tip,,,,"You are now the Genghis Khan of Anti-Zombies.  Keep going, clear more zombies to make it safe for the survivors of both Santa Fe and the locals."
+
+
+tutorialTipGreenzoneOnward3_title,Journal Tip,,,,Going Green Bonus Quest Onward
+tutorialTipGreenzoneOnward3,Journal Tip,,,,"You are now the ultimate Chuck Norris of Anti-Zombies.  Keep going, clear more zombies to make it safe for the survivors of both Santa Fe and the locals."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HelpTheLocals1_name,Quest,Quest Info,,,Help The Locals 
+HelpTheLocals1_subtitle,Quest,Quest Info,,,Side Quest-- Help The Locals 
+HelpTheLocals1_description,Quest,Quest Info,,,"Can’t hurt to make friends with the locals if we’re gonna settle down here.  There’s rumors of survivors operating trading settlements.  
+Find all 5 White River traders and complete all their Trade Route quests that connect settlements.  Earn 20k Duke casino coins total doing jobs for them.  The 20k Duke casino coins must be in your inventory to count for the quest goal but then can be stored or spent elsewhere."
+
+HelpTheLocalsquest_offer,Quest,Quest Info,,,"HELP THE LOCALS WHERE IS THIS BEING WRITTEN"
+
+tutorialTipHelpTheLocals1_title,Journal Tip,,,,Side Quest-- Help the Locals
+tutorialTipHelpTheLocals1,Journal Tip,,,,"Can’t hurt to make friends with the locals if we’re gonna settle down here.  There’s rumors of survivors operating trading settlements. 
+Find all 5 White River traders and complete all their Trade Route quests that connect settlements.  Earn 20k Duke casino coins total doing jobs for them.  The 20k Duke casino coins must be in your inventory to count for the quest goal but then can be stored or spent elsewhere."
+
+
+tutorialTipHelpTheLocals2_title,Journal Tip,,,,Side Quest-- Help the Locals
+tutorialTipHelpTheLocals2,Journal Tip,,,,"Great job, you really covered the whole map and made this county a better place.  Our base will surely flourish here with an alliance between the White River locals and the Santa Fe survivors.  Well done."
+
+
+
+
+Arsenal1_name,Quest,Quest Info,,,Arsenal Quest 
+Arsenal1_subtitle,Quest,Quest Info,,,Side Quest-- Arsenal  
+Arsenal1_description,Quest,Quest Info,,,"After surviving one horde night back in Santa Fe, you know there’s no such thing as too much ammo.  
+Find/craft the large set of ammunition listed to stock your Green Zone base Arsenal and replenish the other survivors when they arrive.  Items must be in your inventory to count for quest goals and then after can be used or stored elsewhere."
+
+Arsenalquest_offer,Quest,Quest Info,,,"ARSENAL WHERE IS THIS BEING WRITTEN"
+
+tutorialTipArsenal1_title,Journal Tip,,,,Side Quest-- Arsenal 
+tutorialTipArsenal1,Journal Tip,,,,"After surviving one horde night back in Santa Fe, you know there’s no such thing as too much ammo.  
+Find/craft the large set of ammunition listed to stock your Green Zone base Arsenal and replenish the other survivors when they arrive.  Items must be in your inventory to count for quest goals and then after can be used or stored elsewhere."
+
+
+
+
+StockingtheER1_name,Quest,Quest Info,,,For the ER Quest
+StockingtheER1_subtitle,Quest,Quest Info,,,Side Quest-- For the ER
+StockingtheER1_description,Quest,Quest Info,,,"The 305 mile trek from Santa Fe to this county near killed me.  Can’t imagine what it will do to the rest of the tired, sick survivors on the way and what medical supplies they will need when they get here.
+Find/craft medical supplies to stock your Green Zone base Emergency Room and help the incoming survivors.  Items must be in your inventory to count for quest goals.  Once you achieve the goal you can use or store the items elsewhere."
+
+StockingtheERquest_offer,Quest,Quest Info,,,"StockingtheER WHERE IS THIS BEING WRITTEN"
+
+tutorialTipStockingtheER1_title,Journal Tip,,,,Sidequest-- For the ER
+tutorialTipStockingtheER1,Journal Tip,,,,"The 305 mile trek from Santa Fe to this county near killed me.  Can’t imagine what it will do to the rest of the tired, sick survivors on the way and what medical supplies they will need when they get here.
+Find/craft medical supplies to stock your Green Zone base Emergency Room and help the incoming survivors.  Items must be in your inventory to count for quest goals.  Once you achieve the goal you can use or store the items elsewhere."
